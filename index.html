@@ -1,52 +1,74 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito di canotaggio</title>
-</head>
-<body>
-	<link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <title>Sito di Canottaggio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <header>
-        <h1>Sito di canotaggio</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="eventi.html">Eventi</a></li>
-                <li><a href="corsi.html">Corsi</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
+      <h1>Sito di Canottaggio</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Galleria</a>
+        <a href="#">Eventi</a>
+        <a href="#">Contatti</a>
+      </nav>
     </header>
     <main>
-        <section>
-            <h2>Benvenuti al nostro sito di canotaggio!</h2>
-            <p>Il canotaggio è uno sport che richiede forza, resistenza e precisione. Qui al nostro club siamo appassionati di questo sport e offriamo corsi per principianti e avanzati.</p>
-        </section>
-        <section>
-            <h2>Prossimi eventi</h2>
-            <ul>
-                <li>Regata di primavera - 10 aprile 2023</li>
-                <li>Corso per principianti - 15 maggio 2023</li>
-                <li>Regata di fine estate - 20 settembre 2023</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Corsi</h2>
-            <p>Offriamo una vasta gamma di corsi di canotaggio per principianti e avanzati. I nostri istruttori esperti ti guideranno passo dopo passo, fornendoti le competenze necessarie per diventare un canottiere di successo.</p>
-            <p>Per maggiori informazioni sui nostri corsi, contattaci.</p>
-        </section>
-        <section>
-            <h2>Contatti</h2>
-            <p>Club di canotaggio XYZ</p>
-            <p>Via Canottieri 123</p>
-            <p>0123456789</p>
-            <p>info@canottaggioxyz.it</p>
-        </section>
+      <section id="hero">
+        <h2>Benvenuti nel mondo del canottaggio</h2>
+        <p>Scoprite la bellezza di questo sport acquatico e unitevi a noi per vivere un'esperienza unica.</p>
+        <a href="#" class="cta">Scopri di più</a>
+      </section>
+      <section id="about">
+        <h2>Chi Siamo</h2>
+        <p>Siamo un gruppo di appassionati di canottaggio che promuove questo sport in tutte le sue forme.</p>
+      </section>
+      <section id="gallery">
+        <h2>Galleria</h2>
+        <ul>
+          <li><img src="img/gallery1.jpg" alt="Immagine della galleria"></li>
+          <li><img src="img/gallery2.jpg" alt="Immagine della galleria"></li>
+          <li><img src="img/gallery3.jpg" alt="Immagine della galleria"></li>
+          <li><img src="img/gallery4.jpg" alt="Immagine della galleria"></li>
+        </ul>
+      </section>
+      <section id="events">
+        <h2>Eventi</h2>
+        <ul>
+          <li>
+            <h3>Regata di Primavera</h3>
+            <p>Data: 15 maggio 2021</p>
+            <p>Luogo: Lago di Como</p>
+          </li>
+          <li>
+            <h3>Regata di Estate</h3>
+            <p>Data: 20 agosto 2021</p>
+            <p>Luogo: Mar Ligure</p>
+          </li>
+          <li>
+            <h3>Regata di Autunno</h3>
+            <p>Data: 5 novembre 2021</p>
+            <p>Luogo: Fiume Po</p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contatti</h2>
+        <form action="#" method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Messaggio:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Invia</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2023 Club di canotaggio XYZ. Tutti i diritti riservati.</p>
+      <p>&copy; 2021 Sito di Canottaggio. Tutti i diritti riservati.</p>
     </footer>
-</body>
+  </body>
 </html>
-
