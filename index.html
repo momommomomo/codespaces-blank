@@ -67,6 +67,109 @@
 		  Registro CONI  n. 244.984</p>
 
 	  </footer>
-  
+	  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Il mio sito web</title>
+  <style>
+    /* Stili per la finestra modale */
+    #privacy-policy-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #privacy-policy-modal h2 {
+      color: #fff;
+    }
+
+    #privacy-policy-modal p {
+      color: #fff;
+    }
+
+    #privacy-policy-modal button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Il tuo header -->
+  </header>
+
+  <main>
+    <!-- Il contenuto del tuo sito -->
+  </main>
+
+  <footer>
+    <p>© 2023 Il mio sito web. Tutti i diritti riservati.</p>
+    <a href="#" id="privacy-policy-link">Privacy Policy</a>
+  </footer>
+
+  <!-- Finestra modale per la privacy policy -->
+  <div id="privacy-policy-modal">
+    <h2>Privacy Policy</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <button id="privacy-policy-accept">Accetta</button>
+  </div>
+
+  <script>
+    // Verifica se l'utente ha già accettato la privacy policy
+    function checkPrivacyPolicyAccepted() {
+      var privacyPolicyAccepted = getCookie('privacy-policy-accepted');
+      return privacyPolicyAccepted !== null && privacyPolicyAccepted === 'true';
+    }
+
+    // Mostra la finestra modale se l'utente non ha ancora accettato la privacy policy
+    function showPrivacyPolicyModal() {
+      var privacyPolicyModal = document.getElementById('privacy-policy-modal');
+      privacyPolicyModal.style.display = 'block';
+    }
+
+    // Imposta il cookie per registrare l'accettazione della privacy policy
+    function setPrivacyPolicyCookie() {
+      var expirationDate = new Date();
+      expirationDate.setFullYear(expirationDate.getFullYear() + 1);
+      document.cookie = 'privacy-policy-accepted=true; expires=' + expirationDate.toGMTString() + '; path=/';
+    }
+
+    // Ottiene il valore di un cookie
+    function getCookie(name) {
+      var value = '; ' + document.cookie;
+      var parts = value.split('; ' + name + '=');
+      if (parts.length === 2) {
+        return parts.pop().split(';').shift();
+      }
+    }
+
+    // Aggiungi l'evento al caricamento della pagina
+    window.addEventListener('load', function() {
+      if (!checkPrivacyPolicyAccepted()) {
+        showPrivacyPolicyModal();
+      }
+    });
+
+    // Aggiungi l'evento al clic sul link della privacy policy
+    var privacyPolicyLink = document.getElementById('privacy-policy-link');
+    privacyPolicyLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      showPrivacyPolicyModal();
+    });
+
+    // Aggiungi l'evento al clic sul pulsante di accettazione della privacy policy
+   
+
 </body>
 </html>
