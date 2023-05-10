@@ -10,11 +10,7 @@ body {
 }
 
 /* Stili per l'intestazione */
-header {
-	background-color: #003366;
-	color: #fff;
-	padding: 1em;
-}
+
 header h1 {
 	margin: 0;
 }
@@ -60,3 +56,6 @@ footer {
 #primo{
   color:#fff
 }
+ footer{
+	background-color: black;
+ }
