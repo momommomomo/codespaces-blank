@@ -1,4 +1,12 @@
 body{
     text-align: center;
- 
-  
+
+body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      background-image: url('https://it.wikipedia.org/wiki/File:Lago_di_Pusiano_(Bosisio_Parini,_Pusiano,_Cesana_Brianza).jpg#/media/File:Lago_di_Pusiano_(Bosisio_Parini,_Pusiano,_Cesana_Brianza).jpg');
+      background-size: cover;
+      ;
+      background-size: cover;
+    }

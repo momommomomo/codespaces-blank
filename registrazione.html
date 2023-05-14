@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Registrazione centro remiero</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #EFEFEF;
-		}
-		.container {
-			max-width: 500px;
-			margin: 0 auto;
-			padding: 20px;
-			background-color: #FFFFFF;
-			box-shadow: 0px 0px 10px #888888;
-		}
-		h1 {
-			text-align: center;
-			color: #333333;
-		}
-		label {
-			display: block;
-			margin-bottom: 5px;
-			color: #333333;
-		}
-		input[type="text"], input[type="email"], input[type="tel"], select {
-			width: 100%;
-			padding: 10px;
-			border: 1px solid #CCCCCC;
-			border-radius: 5px;
-			margin-bottom: 20px;
-			font-size: 16px;
-		}
-		input[type="date"] {
-			width: 48%;
-		}
-		select {
-			height: 40px;
-			background-color: #FFFFFF;
-		}
-		input[type="submit"] {
-			background-color: #336699;
-			color: #FFFFFF;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-		}
-		input[type="submit"]:hover {
-			background-color: #264d73;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<h1>Registrazione Canoeing Center</h1>
-		<form>
-			<label for="name">Nome</label>
-			<input type="text" id="name" name="name" required>
-
-			<label for="surname">Cognome</label>
-			<input type="text" id="surname" name="surname" required>
-
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email" required>
-
-			<label for="phone">Telefono</label>
-			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-
-			<label for="dob">Data di nascita</label>
-			<input type="date" id="dob" name="dob" required>
-
-			<label for="experience">Livello di esperienza</label>
-			<select id="experience" name="experience" required>
-				<option value="" selected disabled hidden>Scegli il tuo livello di esperienza</option>
-				<option value="beginner">Principiante</option>
-				<option value="intermediate">Intermedio</option>
-				<option value="advanced">Avanzato</option>
-			</select>
-
-			<label for="boat-type">Tipo di barca preferito</label>
-			<select id="boat-type" name="boat-type" required>
-				<option value="" selected disabled hidden>Scegli il tuo tipo di barca preferito</option>
-				<option value="kayak">Kayak</option>
-				<option value="canoe">Canoa</option>
-			</select>
-
-			<input type="submit" value="Registrati">
-		</form>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Registrazione al Centro Remiero</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F4F4F4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="password"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Registrazione al Centro Remiero</h1>
+    </header>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="cognome">Cognome:</label>
+      <input type="text" id="cognome" name="cognome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefono">Telefono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      
+      <label for="data_nascita">Data di nascita:</label>
+      <input type="date" id="data_nascita" name="data_nascita" required>
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Registrati">
+    </form>
+  </body>
 </html>

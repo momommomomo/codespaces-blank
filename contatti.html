@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Contattateci</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #2f4f4f;
-			color: white;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			margin: 0;
-			font-size: 32px;
-		}
-		nav {
-			background-color: #f0f8ff;
-			display: flex;
-			justify-content: center;
-			padding: 10px;
-		}
-		nav a {
-			color: #2f4f4f;
-			font-weight: bold;
-			padding: 10px;
-			text-decoration: none;
-		}
-		nav a:hover {
-			background-color: #2f4f4f;
-			color: white;
-		}
-		main {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			padding: 20px;
-		}
-		form {
-			background-color: #f0f8ff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px #888;
-			padding: 20px;
-			width: 50%;
-		}
-		label {
-			display: block;
-			margin: 10px 0;
-			font-weight: bold;
-		}
-		input[type="text"],
-		input[type="email"],
-		textarea {
-			width: 100%;
-			padding: 10px;
-			border-radius: 5px;
-			border: none;
-			margin-bottom: 20px;
-			font-size: 16px;
-			box-sizing: border-box;
-		}
-		input[type="submit"] {
-			background-color: #2f4f4f;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			padding: 10px 20px;
-			cursor: pointer;
-			font-size: 16px;
-		}
-		input[type="submit"]:hover {
-			background-color: #1c313a;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>Contatti di Canottaggio</h1>
-	</header>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">Chi Siamo</a>
-		<a href="#">Galleria</a>
-		<a href="#">Contatti</a>
-	</nav>
-	<main>
-		<form>
-			<label for="nome">Nome:</label>
-			<input type="text" id="nome" name="nome" required>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<label for="messaggio">Messaggio:</label>
-			<textarea id="messaggio" name="messaggio" rows="5" required></textarea>
-			<input type="submit" value="Invia">
-		</form>
-	</main>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contatti Centro Remiero</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #F4F4F4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #0072C6;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #333;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      textarea {
+        height: 150px;
+      }
+      input[type="submit"] {
+        background-color: #0072C6;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      input[type="submit"]:hover {
+        background-color: #0060A8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contatti Centro Remiero</h1>
+    </header>
+    <div class="container">
+      <p>Compila il seguente modulo per contattarci. Ti risponderemo il prima possibile.</p>
+      <form action="#" method="post">
+        <label for="name">Nome completo</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Invia">
+      </form>
+    </div>
+  </body>
 </html>

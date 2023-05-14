@@ -8,7 +8,7 @@ body {
   ;
   background-size: cover;
 }
-
+  
 /* Stili per l'intestazione */
 
 header h1 {
@@ -59,3 +59,8 @@ footer {
  footer{
 	background-color: black;
  }
+
+ h1 {
+	text-align: center;
+  }
+  
