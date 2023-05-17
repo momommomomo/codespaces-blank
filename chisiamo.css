@@ -1,3 +1,64 @@
+/* Stili globali */
 body {
-    text-align: center;
-    }  
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/12/Lago_di_Pusiano_%28Bosisio_Parini%2C_Pusiano%2C_Cesana_Brianza%29.jpg");
+  background-size: contain;
+  ;
+  background-size: auto;
+  text-align: center;
+}
+  
+/* Stili per l'intestazione */
+
+header h1 {
+	margin: 0;
+}
+
+/* Stili per la navigazione */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+	margin: 0 1em;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Stili per le sezioni */
+section {
+	padding: 2em;
+}
+section h2 {
+	margin-top: 0;
+}
+
+/* Stili per il form di contatto */
+form label {
+	display: block;
+}
+form input, form textarea {
+	margin-bottom: 1em;
+}
+
+/* Stili per il piè di pagina */
+footer {
+	background-color: #ccc;
+	padding: 1em;
+	text-align: center;
+}
+
+
+ footer{
+	background-color: black;
+ }
+
+ h1 {
+	text-align: center;
+  }
